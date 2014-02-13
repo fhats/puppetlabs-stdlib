@@ -148,6 +148,23 @@ Would result in:
 
 - *Type*: rvalue
 
+convert_base
+------------
+Converts a given integer or string representing an integer to a specified base, as a string.
+
+*Example:*
+
+    $binary_repr = convert_base(5, 2)
+    $hex_repr = convert_base("254", "16")
+
+Would result in:
+
+    $binary_repr == "101"
+    $hex_repr == "fe"
+
+
+- *Type*: rvalue
+
 count
 -----
 Takes an array as first argument and an optional second argument.
