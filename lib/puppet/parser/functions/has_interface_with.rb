@@ -41,7 +41,7 @@ has_interface_with("lo")                        => true
 
     result = false
     interfaces.each do |iface|
-      if value == lookupvar("#{kind}_#{iface}")
+      if value == Facter["#{kind}_#{iface}"].value
         result = true
         break
       end
